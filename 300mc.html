@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Homework</title>
+</head>
+<body bgcolor="#ffdead">
+<script>
+    const random = (min, max) => {
+        let rnd = Math.random() * (max-min)
+        return Math.round(rnd)
+    }
+  window.onload = () => { //метод, который будет вызван после загрузки страницы
+    let interval = setInterval(() => {
+        document.body.style.background = `rgb(${random(1, 255)}, ${random(1, 255)}, ${random(1, 255)})`
+    }, 300)
+    btn.onclick = () => { //метод, который будет вызван после клика на кнопку
+        helloWorld.innerHTML = inp_login.value
+        divPass.innerHTML = inp_pass.value
+        btn.style.background = 'purple'
+    }
+
+    if (true) {   //условие
+        console.log('sd')
+    }
+
+
+
+    let m = 1
+    while (m<10) {
+        console.log("fdghyuopk;")
+        m++
+    }
+
+  }
+</script>
+<style>
+
+    .flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 20%;
+        left: 35%;
+    }
+
+    .block1 {
+        background-color: deeppink;
+        border-radius: 30px;
+        width: 250px;
+        font-size: 20px;
+        height: 75px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .block2 {
+        background-color: lightcyan;
+        border-radius: 25px;
+        height: 225px;
+        width: 350px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #btn {
+        background-color: greenyellow;
+        border-radius: 12px;
+        height: 50px;
+        width: 200px;
+        font-size: 25px;
+
+    }
+
+    #btn:hover {
+        background-color: blue;
+        border-radius: 12px;
+        height: 50px;
+        width: 200px;
+        font-size: 40px;
+    }
+
+</style>
+</body>
+</html>
